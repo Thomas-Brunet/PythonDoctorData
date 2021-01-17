@@ -1,0 +1,7 @@
+SEXID,2012,2013,2014,2015,2016,2017,2018,2019,2020
+ Ensemble,40 483,40 739,41 217,41 286,41 581,41 978,42 049,42 143,42 843
+Femme,15 970,16 394,16 958,17 417,17 898,18 437,18 755,19 184,19 819
+Homme,24 513,24 345,24 259,23 869,23 683,23 541,23 294,22 959,23 019
+Non disponible,0,0,0,0,0,0,0,0,5
+"Champ :  France entière, Source : ASIP-Sante RPPS - traitements Drees - donnees au 1er janvier de l'année ","","","","","","","","",""
+TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
