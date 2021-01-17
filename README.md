@@ -8,7 +8,7 @@ j'ai également utilisé ces ressources extérieurs :
  - geojson pour la carte de France : "https://france-geojson.gregoiredavid.fr/repo/departements.geojson"
 
 # User Guide
-prérequis, installation des packages (commandes à faire en console): 
+prérequis, installation des packages (commandes à faire en console en ayant installé pip): 
   panda : pip install panda
   plotly : pip install plotly
   plotly express : pip install plotly_express
@@ -16,10 +16,10 @@ prérequis, installation des packages (commandes à faire en console):
   dash : pip install dash
 
 Installation du projet :
-  1) Télécharger le projet et le placer dans un répertoire.
+  1) Télécharger le projet (sous forme de zip) et le placer dans un répertoire.
   2) Aller dans la console  de commande et placer vous dans ce répertoire
   3) Faire la commande "python main.py"
-  4) Taper l'adresse "http://127.0.0.1:8050/" dans la barre de recher de votre navigateur
+  4) Taper l'adresse "http://127.0.0.1:8050/" dans la barre de recherche de votre navigateur
   5) Ne pas fermez la console de commande pendant la visualisation du site
   
 Le processus de création des données et du site peut prendre une trentainne de seconde...
@@ -54,6 +54,8 @@ société Julie Solutions qui développe un logiciel de gestion de cabinet pour 
 m'as tourjours intéressé, je souhaitait donc en vavoir un peu plus ce secteur.
 Ce projet étudie 3 points sur la profession : l'age moyen, la parité et la répartition sur le territoire français des
 professionnels de la santé.
+Il est important de noté que ces données prennent en compte les professionels spécialisés, surtout chez les médecins et 
+les dentistes, et ne représentent donc pas que les médecins généralistes par exemple...
 
  - Le diagramme : 
  Le diagramme présente la répartition de l'age des médecins, infirmiers et dentistes de France.
@@ -61,10 +63,19 @@ professionnels de la santé.
  55% pour les médecins et 53% pour les dentistes, tandis que c'est équilibré pour les infirmiers.
  En avancant vers 2020 on observe une augmentation de jeunes arrivant dans les 3 professions, mais également
  une augmentation général des personnes travaillant après 65 ans :
- 
+ 3% pour les médecins, 1.5% pour les infirmier, 0.6% pour les dentistes d'augmentation entre 2012 et 2020 pour les travailleurs
+ de plus de 65 ans. 7% de médecins, 2% d'infirmiers, 9% de dentistes en plus ont moins de 40 ans entre 2012 et 2020
  
  - Le diagramme circulaire :
- 
- 
+ Le diagramme circulaire représente la proportion homme/femme dans la profession choisit en France.
+ On remarque que l'équilibre est présent dans les médecins et les dentistes et tend même à s'améliorer en s'approchant d'un
+ 50%/50% entre 2012 et 2020. En revanche ce n'est pas le cas avec les infirmiers qui sont composé à 87% de femmes et 13% d'hommes
+ et ne s'améliore que très peu entre 2012 et 2020 en passant à 86.5%/13.5%. Ces disparités sont présentes depuis très longtemps
+ en France dans les métiers de la médecine ou les médecins étaient majoritairement des hommes et les infirmies des femmes.
+ Cette situation a beaucoup changé pour les médecins mais est resté chez les infirmiers...
  
  - La carte :
+ La map représente le nombre d'habitants par médecin par département en France pour les médecins.
+ On remarque en premier 2 départements très mal desservis : l'Ain et l'Eure, mais également les territoire ruraux
+ qui semblent peu attirer la profession. Ce phénomène existe depuis très longtemps e tne s'améliore pas avec 
+ les années, les médecins ayant parfois du mal à se former une clientèles en milieu rural.
